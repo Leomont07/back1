@@ -10,8 +10,7 @@ logs/
 *.log
 
 # Firebase service account key (sensitive)
-server1/src/config/seguridad-83867-firebase-adminsdk-fbsvc-25c92b171e.json
-server2/src/config/seguridad-83867-firebase-adminsdk-fbsvc-25c92b171e.json
+src/config/seguridad-83867-firebase-adminsdk-fbsvc-25c92b171e.json
 
 # IDE and editor files
 .vscode/
