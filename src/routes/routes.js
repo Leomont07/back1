@@ -136,7 +136,7 @@ router.post('/verify-mfa', async (req, res) => {
             return res.status(400).json({ message: 'Invalid OTP' });
         }
 
-        const token = jwt.sign({ id: userId, email: userData.email, grado: userData.grado, grupo: userData.grupo }, process.env.JWT_SECRET, { expiresIn: '1h' });
+        const token = jwt.sign({ id: userId, username: userData.username, email: userData.email, grado: userData.grado, grupo: userData.grupo }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
         console.log('JWT generado');
 
